@@ -22,6 +22,7 @@ sturkturiert.
 
 --------
 (1) Hentschel, Johannes et al. _Ludwig van Beethoven Piano Sonatas (A corpus of
-annotated scores)_. Version 1.1. Dez. 2022. doi: 10.5281/zenodo.7535598.
+annotated scores)_. Version 1.1. Dez. 2022. doi: 10.5281/zenodo.7535598. 
+Erhältlich unter https://github.com/DCMLab/beethoven_piano_sonatas/tree/v2.0
 
 (2) Erhältlich unter https://github.com/rahulandrea/big-data-beethoven.git
