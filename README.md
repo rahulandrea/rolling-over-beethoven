@@ -1,4 +1,4 @@
-# big-data-beethoven
+# Rolling Over Beethoven
 Eine Untersuchung statistischer Eigenschaften der tonalen Harmonie in Beethovens Klaviersonaten (Maturaarb. 2023)
 
 ## Zusammenfassung
@@ -7,7 +7,7 @@ Tonale Harmonie ist eine der zentralen Eigenschaften der klassischen westlichen 
 
 Mithilfe von rechnergestützter Auswertungen wird in dieser Arbeit gezeigt, dass 1. tonale Harmonie grösstenteils durch wenige führende Akkorde bestimmt wird; 2. Akkordübergänge sich an Bezugspunkten orientieren und die Vorhersage von Akkorden deutlich durch bestimmte Akkordmerkmale beeinflusst wird; und 3. tonale Harmonie zeitlich gerichtet ist und grundsätzlich authentische Übergänge bevorzugt.
 
-Die Ergebnisse fügen sich grösstenteils in die vorherrschende Lehre und bestä- tigen daher die angenommenen Grundthesen der tonale Harmonie. Sie ergän- zen jedoch den Bereich der quantitativen Musikforschung. Arbeiten in diesem Bereich könnten in Zukunft hilfreich bei der Entwicklung von künstlicher In- telligenz in der Musik sein. Dazu sind jedoch Analysen noch umfassenderer Datensätze nötig, um eine lückenfreie, quantitativ belegbare Grundlage für daraus abgeleiteten Annahmen zu bilden.
+Die Ergebnisse fügen sich grösstenteils in die vorherrschende Lehre und bestätigen daher die angenommenen Grundthesen der tonale Harmonie. Sie ergänzen jedoch den Bereich der quantitativen Musikforschung. Arbeiten in diesem Bereich könnten in Zukunft hilfreich bei der Entwicklung von künstlicher Intelligenz in der Musik sein. Dazu sind jedoch Analysen noch umfassenderer Datensätze nötig, um eine lückenfreie, quantitativ belegbare Grundlage für daraus abgeleiteten Annahmen zu bilden.
 
 ## Durchführung der Analysen
 
