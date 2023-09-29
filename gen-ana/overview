@@ -1,0 +1,3 @@
+gen-ana
+
+"count-local-keys.R", "count-mvt-keys.R", "count-no-diff-chords-in-maj.R", "count-no-i-v-roots-in-local-key", "count-token-per-sonata-in-maj", "count-token-per-sonata", "count-transitions"
