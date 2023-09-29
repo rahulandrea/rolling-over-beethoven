@@ -1,0 +1,11 @@
+Beschreibung der Prog.me: harmonic-ana-2
+
+20230816-oval-harmonic-table-oval.R
+Dieses Programm liest alle annotierten Beethoven Sonaten ein (im .tsv Format) und kombiniert sie zu einer grossen .tsv Tabelle. Folgende Sonderheiten wurden beachtet:
+- Unterschiedliche Spaltenüberschriften (und dadurch fehlende Spalten)
+- Interpretation der Einträge als Text und nicht Werte (im Annotationsstandard wird ‘%’ für eine
+halbverminderten Akkord benutzt, dasselbe Zeichen wird in R zur Kommentierung benutzt)
+
+oval-harmonic-ana-2g-custom-filter.R
+Dieses Programm liest alle annotierten Beethoven Sonaten ein (im .tsv Format) und kombiniert sie zu einer grossen .tsv Tabelle. (siehe 20230816-oval-harmonic-table-oval.R) Weiter besteht die Möglichkeit, die Akkorde zu filtern. Anschliessend wird ein Dataframe erstellt, welches jedem Akkord (chord) einen Rang (rank) und die relative Häufigkeit (relative_frequency) zuordnet.
+Es lassen sich Plots Rang vs. rel. Häufigkeit mit dem Paket ‘ggplot2’ erstellen.
