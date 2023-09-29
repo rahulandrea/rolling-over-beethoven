@@ -11,7 +11,7 @@ Die Ergebnisse fügen sich grösstenteils in die vorherrschende Lehre und bestä
 
 ## Durchführung der Analysen
 
-Die Analysen der Daten wurden in der Programmiersprache R und der Ent- wicklungsumgebung RStudio auf einem MacBook Pro (2014) durchgeführt. R ist auf statistische Auswertung spezialisiert und eignet sich gut für die Bearbei- tung und Darstellung von Tabellen und Statistiken. Für die Analysen wurden ausschliesslich die Dateien der Harmonieannotationen aus dem Korpus von Hentschel et al. genutzt. (1) Tabellen im TSV-Format wurden wie folgt eingelesen und zu einem grossen Datenrahmen kombiniert, anhand welchem dann die Untersuchungen durchgeführt wurden.
+Die Analysen der Daten wurden in der Programmiersprache R und der Ent- wicklungsumgebung RStudio auf einem MacBook Pro (2014) durchgeführt. R ist auf statistische Auswertung spezialisiert und eignet sich gut für die Bearbei- tung und Darstellung von Tabellen und Statistiken. Für die Analysen wurden ausschliesslich die Dateien der Harmonieannotationen aus dem Korpus von Hentschel et al. genutzt.^1 Tabellen im TSV-Format wurden wie folgt eingelesen und zu einem grossen Datenrahmen kombiniert, anhand welchem dann die Untersuchungen durchgeführt wurden.
 
 Bei den Analysen wurde stets auf die Reproduzierbarkeit der Ergebnisse geachtet. Daher sind die gesamten Programme auf Github hochgeladen (2) worden und folgendermassen sturkturiert.
 
