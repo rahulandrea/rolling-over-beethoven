@@ -5,13 +5,16 @@ Eine Untersuchung statistischer Eigenschaften der tonalen Harmonie in Beethovens
 
 Tonale Harmonie ist eine der zentralen Eigenschaften der klassischen westlichen Musik. In der bisherigen Musikforschung über tonale Harmonie wird meist ein qualitativer Ansatz gewählt, bei welchem allgemeine Aussagen oft nur von einer kleinen Zahl von Beispielen gestützt werden. Diese Arbeit wählt wie andere kürzlich veröffentlichte Untersuchungen in dem Fachgebiet einen quantitativen Ansatz. Sie gibt zuerst eine Übersicht zu den musiktheoretischen Hintergründen und versucht anschliessend die statistischen Eigenschaften der tonalen Harmonie zu erfassen, untersuchen und beschreiben. Die Analysen werden an Beethovens 32 Klaviersonaten durchgeführt, die in einem kürzlich veröffentlichten Datensatzes von Hentschel, Johannes et al. harmonisch annotiert wurden. Die angewendeten Methoden stützen sich auf eine Untersuchung von Moss, Fabian C. et al. zur statistischen Charakterisierung der tonalen Harmonie in Beethovens Streichquartetten.
 
-Mithilfe von rechnergestützter Auswertungen wird in dieser Arbeit gezeigt, dass 1. tonale Harmonie grösstenteils durch wenige führende Akkorde bestimmt wird; 2. Akkordübergänge sich an Bezugspunkten orientieren und die Vorhersage von Akkorden deutlich durch bestimmte Akkordmerkmale beeinflusst wird; und 3. tonale Harmonie zeitlich gerichtet ist und grundsätzlich authentische Übergänge bevorzugt.
+Mithilfe von rechnergestützter Auswertungen wird in dieser Arbeit gezeigt, dass 
+1. tonale Harmonie grösstenteils durch wenige führende Akkorde bestimmt wird;
+2. Akkordübergänge sich an Bezugspunkten orientieren und die Vorhersage von Akkorden deutlich durch bestimmte Akkordmerkmale beeinflusst wird; und
+3. tonale Harmonie zeitlich gerichtet ist und grundsätzlich authentische Übergänge bevorzugt.
 
 Die Ergebnisse fügen sich grösstenteils in die vorherrschende Lehre und bestätigen daher die angenommenen Grundthesen der tonale Harmonie. Sie ergänzen jedoch den Bereich der quantitativen Musikforschung. Arbeiten in diesem Bereich könnten in Zukunft hilfreich bei der Entwicklung von künstlicher Intelligenz in der Musik sein. Dazu sind jedoch Analysen noch umfassenderer Datensätze nötig, um eine lückenfreie, quantitativ belegbare Grundlage für daraus abgeleiteten Annahmen zu bilden.
 
 ## Durchführung der Analysen
 
-Die Analysen der Daten wurden in der Programmiersprache R und der Ent- wicklungsumgebung RStudio auf einem MacBook Pro (2014) durchgeführt. R ist auf statistische Auswertung spezialisiert und eignet sich gut für die Bearbei- tung und Darstellung von Tabellen und Statistiken. Für die Analysen wurden ausschliesslich die Dateien der Harmonieannotationen aus dem Korpus von Hentschel et al. genutzt.^1 Tabellen im TSV-Format wurden wie folgt eingelesen und zu einem grossen Datenrahmen kombiniert, anhand welchem dann die Untersuchungen durchgeführt wurden.
+Die Analysen der Daten wurden in der Programmiersprache R und der Ent- wicklungsumgebung RStudio auf einem MacBook Pro (2014) durchgeführt. R ist auf statistische Auswertung spezialisiert und eignet sich gut für die Bearbei- tung und Darstellung von Tabellen und Statistiken. Für die Analysen wurden ausschliesslich die Dateien der Harmonieannotationen aus dem Korpus von Hentschel et al. genutzt.(1) Tabellen im TSV-Format wurden wie folgt eingelesen und zu einem grossen Datenrahmen kombiniert, anhand welchem dann die Untersuchungen durchgeführt wurden.
 
 Bei den Analysen wurde stets auf die Reproduzierbarkeit der Ergebnisse geachtet. Daher sind die gesamten Programme auf Github hochgeladen (2) worden und folgendermassen sturkturiert.
 
