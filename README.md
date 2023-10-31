@@ -29,6 +29,7 @@ Bei den Analysen wurde stets auf die Reproduzierbarkeit der Ergebnisse geachtet.
 
 --------
 (1) Sowie auch jegliche Diagramme und graphische Darstellungen.
+
 (2) Hentschel, Johannes et al. _Ludwig van Beethoven Piano Sonatas (A corpus of
 annotated scores)_. Version 2.0. Dez. 2022. doi: 10.5281/zenodo.7535598. 
 Erhältlich unter https://github.com/DCMLab/beethoven_piano_sonatas/tree/v2.0
