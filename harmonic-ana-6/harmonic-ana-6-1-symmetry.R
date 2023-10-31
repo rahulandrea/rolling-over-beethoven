@@ -1,6 +1,10 @@
+# Dieses Prog. wählt zufällige Stichproben von Akkordübergängen und
+# untersucht deren "Symmetrie"
+
 # Hypothesentest: Symmetrie der Akkordübergänge
 # H0: sym_g = 1 / H1: sym_g < 1
 
+# Das Prog. ist wie folgt strukturiert:
 # (1) Übergangswahrscheinlichkeiten Matrix -> transition_df
 # (2) Filter nach Bed.: c1 != c2 && p(c1 -> c2) != 0 && p(c2 -> c1) != 0
 # (3) Wähle Stichproben (k =50 000) à 100 Bigramme
