@@ -25,7 +25,7 @@ Bei den Analysen wurde stets auf die Reproduzierbarkeit der Ergebnisse geachtet.
 | harmonic-ana-3		 | Analysen zur Zentrierung (Rang-Häufigkeits-Verteilung, Optimierung Mandebrot-Zipf-Funktion)                 |
 | harmonic-ana-4		 | Analysen zur Referenzialität (Häufigkeiten von Akkordübergängen, Heatmaps)                                  |
 | harmonic-ana-5     | Analysen zur Referenzialität (Bedingte Entropie, Einflüsse von Merkmalen auf Vorhersagbarkeit)              |
-| harmonic-ana-6     | Analysen zur Referenzialität (Bedingte Entropie, Einflüsse von Merkmalen auf Vorhersagbarkeit)              |
+| harmonic-ana-6     | Analysen zur Symmetrie (Symmetrie von Akkordübergängen, Authetische und plagale Übergänge)                  |
 
 --------
 (1) Sowie auch jegliche Diagramme und graphische Darstellungen.
