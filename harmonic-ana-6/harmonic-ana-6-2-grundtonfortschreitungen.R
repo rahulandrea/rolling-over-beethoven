@@ -81,12 +81,12 @@ data <- data.frame(
 data <- data[order(data$Wert, decreasing = TRUE),]
 
 # Farbpalette für Balken
-farben <- c("#A9A9A9", "#627313", "#8E6713", "#627313", "#627313", "#8E6713", "#8E6713")
+Farben1 <- c("#A9A9A9","#627313","#8E6713","#8E6713","#627313","#8E6713","#627313")
 
 # Balkendiagramm erstellen
 ggplot(data, aes(x = reorder(Kategorie, -Wert), y = Wert, fill = Kategorie)) +
   geom_bar(stat = "identity") +
-  scale_fill_manual(values = farben) +  # Farbpalette festlegen
+  scale_fill_manual(values = Farben1) +  # Farbpalette festlegen
   labs(
     # title = paste("Alterationen \n µ_M =",round(A_entropy_mean, 4),"\n π_M =",round(p,4)),
     x = "Grundtonübergänge", 
