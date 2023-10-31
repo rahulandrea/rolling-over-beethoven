@@ -4,6 +4,9 @@
 # Hypothesentest: Symmetrie der Akkordübergänge
 # H0: sym_g = 1 / H1: sym_g < 1
 
+# !! Muss entprechend modifiziert werden für Dur/Moll Abschnitte !!
+# Unter "Globale Parameter" (über Punkt (1))
+
 # Das Prog. ist wie folgt strukturiert:
 # (1) Übergangswahrscheinlichkeiten Matrix -> transition_df
 # (2) Filter nach Bed.: c1 != c2 && p(c1 -> c2) != 0 && p(c2 -> c1) != 0
