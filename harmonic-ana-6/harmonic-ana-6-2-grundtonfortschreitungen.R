@@ -81,7 +81,7 @@ data <- data.frame(
 data <- data[order(data$Wert, decreasing = TRUE),]
 
 # Farbpalette für Balken
-Farben1 <- c("#A9A9A9","#627313","#8E6713","#8E6713","#627313","#8E6713","#627313")
+Farben1 <- c("#A9A9A9","#8E6713","#627313","#627313","#8E6713","#627313","#8E6713")
 
 # Balkendiagramm erstellen
 ggplot(data, aes(x = reorder(Kategorie, -Wert), y = Wert, fill = Kategorie)) +
@@ -104,4 +104,4 @@ ggplot(data, aes(x = reorder(Kategorie, -Wert), y = Wert, fill = Kategorie)) +
   )
 
 # Speichere das Diagramm als PNG-Datei
-ggsave("grundton-uber-neu.png", plot = last_plot(), width = 8, height = 4, dpi = 480)
+ggsave("grundtonuebergaenge.png", plot = last_plot(), width = 8, height = 4, dpi = 480)
