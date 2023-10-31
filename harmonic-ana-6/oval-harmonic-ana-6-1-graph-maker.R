@@ -1,5 +1,6 @@
-# Graph zu 5x
-# an die Gestalltung meiner Arbeit angepasst
+# Erstellt den Graph zu harmonic-ana-6-1
+# !! Muss entprechend modifiziert werden für Dur/Moll Abschnitte !!
+# Ist an die Gestalltung meiner Arbeit angepasst
 
 library(ggplot2)
 
