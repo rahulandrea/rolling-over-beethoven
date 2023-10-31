@@ -14,9 +14,9 @@ Die Ergebnisse fügen sich grösstenteils in die vorherrschende Lehre und bestä
 
 ## Durchführung der Analysen
 
-Die Analysen der Daten wurden in der Programmiersprache R und der Ent- wicklungsumgebung RStudio auf einem MacBook Pro (2014) durchgeführt. R ist auf statistische Auswertung spezialisiert und eignet sich gut für die Bearbei- tung und Darstellung von Tabellen und Statistiken. Für die Analysen wurden ausschliesslich die Dateien der Harmonieannotationen aus dem Korpus von Hentschel et al. genutzt.(1) Tabellen im TSV-Format wurden wie folgt eingelesen und zu einem grossen Datenrahmen kombiniert, anhand welchem dann die Untersuchungen durchgeführt wurden.
+Die Analysen der Daten(1) wurden in der Programmiersprache R und der Entwicklungsumgebung RStudio auf einem MacBook Pro (2014) durchgeführt. R ist auf statistische Auswertung spezialisiert und eignet sich gut für die Bearbeitung und Darstellung von Tabellen und Statistiken. Für die Analysen wurden ausschliesslich die Dateien der Harmonieannotationen aus dem Korpus von Hentschel et al. genutzt.(2) Tabellen im TSV-Format wurden wie folgt eingelesen und zu einem grossen Datenrahmen kombiniert, anhand welchem dann die Untersuchungen durchgeführt wurden.
 
-Bei den Analysen wurde stets auf die Reproduzierbarkeit der Ergebnisse geachtet. Daher sind die gesamten Programme auf Github hochgeladen (2) worden und folgendermassen sturkturiert.
+Bei den Analysen wurde stets auf die Reproduzierbarkeit der Ergebnisse geachtet. Daher sind die gesamten Programme auf Github hochgeladen (3) worden und folgendermassen sturkturiert.
 
 | Programm           | Beschreibung                                                                                                |
 | ------------------ | ----------------------------------------------------------------------------------------------------------- |
@@ -28,8 +28,9 @@ Bei den Analysen wurde stets auf die Reproduzierbarkeit der Ergebnisse geachtet.
 | harmonic-ana-6     | Analysen zur Referenzialität (Bedingte Entropie, Einflüsse von Merkmalen auf Vorhersagbarkeit)              |
 
 --------
-(1) Hentschel, Johannes et al. _Ludwig van Beethoven Piano Sonatas (A corpus of
+(1) Sowie auch jegliche Diagramme und graphische Darstellungen.
+(2) Hentschel, Johannes et al. _Ludwig van Beethoven Piano Sonatas (A corpus of
 annotated scores)_. Version 2.0. Dez. 2022. doi: 10.5281/zenodo.7535598. 
 Erhältlich unter https://github.com/DCMLab/beethoven_piano_sonatas/tree/v2.0
 
-(2) Erhältlich unter https://github.com/rahulandrea/big-data-beethoven.git
+(3) Erhältlich unter https://github.com/rahulandrea/big-data-beethoven.git
