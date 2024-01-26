@@ -1,6 +1,9 @@
 # Rolling Over Beethoven
 Eine Untersuchung statistischer Eigenschaften der tonalen Harmonie in Beethovens Klaviersonaten (Maturaarb. 2023)
 
+**DIESES PROJEKT WIRD GERADE ÜBERARBEITET. FÜR FRÜHERE VERSIONEN SIEHE RoB v1.0 UNTER VERSIONEN.
+**
+
 ## Zusammenfassung
 
 Tonale Harmonie ist eine der zentralen Eigenschaften der klassischen westlichen Musik. In der bisherigen Musikforschung über tonale Harmonie wird meist ein qualitativer Ansatz gewählt, bei welchem allgemeine Aussagen oft nur von einer kleinen Zahl von Beispielen gestützt werden. Diese Arbeit wählt wie andere kürzlich veröffentlichte Untersuchungen in dem Fachgebiet einen quantitativen Ansatz. Sie gibt zuerst eine Übersicht zu den musiktheoretischen Hintergründen und versucht anschliessend die statistischen Eigenschaften der tonalen Harmonie zu erfassen, untersuchen und beschreiben. Die Analysen werden an Beethovens 32 Klaviersonaten durchgeführt, die in einem kürzlich veröffentlichten Datensatzes von Hentschel, Johannes et al. harmonisch annotiert wurden. Die angewendeten Methoden stützen sich auf eine Untersuchung von Moss, Fabian C. et al. zur statistischen Charakterisierung der tonalen Harmonie in Beethovens Streichquartetten.
