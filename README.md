@@ -1,7 +1,7 @@
 # Rolling Over Beethoven
 Eine Untersuchung statistischer Eigenschaften der tonalen Harmonie in Beethovens Klaviersonaten (Maturaarb. 2023)
 
-**DIESES PROJEKT WIRD GERADE ÜBERARBEITET. FÜR FRÜHERE VERSIONEN SIEHE RoB v1.0 UNTER VERSIONEN.**
+> **DIESES PROJEKT WIRD GERADE ÜBERARBEITET. FÜR FRÜHERE VERSIONEN SIEHE RoB v1.0 UNTER VERSIONEN.**
 
 ## Zusammenfassung
 
