@@ -18,6 +18,21 @@ Die Analysen wurden in der Programmiersprache R und der Entwicklungsumgebung RSt
 
 Beim Einlesen mussten Sonderheiten in der Annotation, wie die Nutzung in R geschützter Sonderzeichen ('%' und '#') und der von R als logische Werte interpretierten Zeichen 'F' und 'R', beachtet werden. Die durchgeführten Analysen sind in vier Kategorien eingeteilt. In einem ersten Schritt wurde die Rang-Häufigkeit von Unigrammen untersucht. Die zweite Analyse umfasst die Häufigkeit von Akkordübergängen. In einer dritten Analyse wurde Vorhersagbarkeit von Akkordübergängen betrachtet und in der vierten und letzten wurde die Symmetrie von Übergängen untersucht. Bei den Analysen wurde stets auf die Reproduzierbarkeit der Ergebnisse geachtet. Daher ist der gesamte Programmcode inklusive detaillierter Beschreibungen hier auf GitHub verfügbar. **Hinweise zu Fehlern in den Programmen oder andere Irrtümer werden gerne angenommen.**
 
+Die Analysen in dieser Ablage sind wie folgt gegliedert:
+
+| Name                     | Analyseart | Beschreibung |
+|------|------------|--------------|
+|3-Benamsung               |-           |Umbenennung der Dateien aus den Datensätzen von Neuwirth et al. und Hentschel et al. damit diese von den Programmen dieser Arbeit eingelesen werden können. Diese Programme müssen zu Anfang einmal ausgeführt werden.|
+|4-Datenbereinigung        |-           |Bereinigung der Tabellen aus den Datensätzen von Neuwirth et al. und Hentschel et al. bzgl. Format und Inhalt damit diese von den Programmen dieser Arbeit eingelesen werden können. Diese Programme sind jeweils – sofern nötig – in die anderen integriert.|
+|ana1-UG-Rang-Häufigkeit   |Unigramm    |(a) Untersuchung der Rang-Häufigkeit; (b) Vergleich der R-H mit Mandelbrot-Zipf-Kurve; und (c) Vergleich der R-H verschiedener Datensätze|
+|ana2-BG-Übergänge         |Bigramm     |(a) Häufigkeit der Übergänge zwischen den 25 häufigsten Akkorden in einem Datensatz; und (b) Vergleich zweier Datensätze|
+|ana3-BG-Entropie          |Bigramm     |(a) Vgl. der Entropie einer Akkordstichprobe aus allen Akkorden mit Akkorden mit bestimmter Eigenschaft (aus demselben Datensatz); (b) Vgl. der Entropie von Akkordstichproben eines Datensatzes mit Akkorden eines anderen, darunter (b1) Normal, Differenzierung aller Akkordtoken (wie in ana3a); und (b2) Reduktion auf Stufen (I, II, ..)|
+|ana4-BG-Symmetrie         |Bigramm     |Untersuchung der Symmetrie von Akkordübergängen|
+
+
+
+
+
 [^1]: Hentschel, Johannes et al. _Ludwig van Beethoven Piano Sonatas (A corpus of annotated scores)_. Vers. 1.1. Dez. 2022. 10.5281/zenodo.7535598
 [^2]: Neuwirth, Markus et al. _The Annotated Beethoven Corpus (ABC): A Dataset of Harmonic Analyses of All Beethoven String Quartets_. In Front. Dig. Humanit. 5.16. Jul. 2018. 10.3389/fdigh.2018.00016
 [^3]: Moss, Fabian C. et al. _Statistical characteristics of tonal harmony: A corpus study of Beethoven's string quartets_. In PLOS ONE 14.6 Jun. 2019. 10.1371/journal.pone.0217242
