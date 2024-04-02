@@ -596,4 +596,4 @@ ggplot(data.frame(sample_mean_base = sample_df$sample_mean_base, sample_mean_dev
 
 
 # Speichere das Diagramm als PNG-Datei
-ggsave("ana3b-BG-compare-entropy_LVBS-early-late-major-480dpi.png", plot = last_plot(), path = "Ergebnisse/In-Skript", width = 8, height = 5, dpi = 480)
+ggsave("ana3b-BG-compare-entropy_LVBS-early-late-major-480dpi.png", plot = last_plot(), path = "Ergebnisse", width = 8, height = 5, dpi = 480)
