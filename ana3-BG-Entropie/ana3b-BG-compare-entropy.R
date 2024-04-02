@@ -4,7 +4,6 @@
 # (0) Zuallererst wird der Untersuchungsgegenstand und Parameter festgelegt:
 #     (0a) Die zu untersuchenden Dateien: Es können zwei Gruppen von Daten verglichen werden: 
 #          Eine Basisgruppe (base) und eine Vergleichsgruppe (dev1)
-#     (0b) Wie genau die Akkorde unterschieden werden
 #     (0c) Es besteht die Möglichkeit, nach Tongeschlecht der Tonartabschnitten zu filtern
 #     (0d) Hier können Umfang und Anzahl der Stichproben für die Hypothesentests festgelegt werden
 # (A-B) Dieses Prog. nutzt "ana1c-UG-rank-freq.R" um ein Dataframe zu erstellen, welches jedem
@@ -36,7 +35,7 @@
 #     Stichproben für die Darstellung aufaddiert werden, können hier angepasst werden.
 
 
-setwd("/Users/rahul/Library/CloudStorage/OneDrive-SBL/32-Maturaarbeit")
+#setwd()
 
 
 # (0)
@@ -54,25 +53,17 @@ tsv_files_base <- list.files(path = "Daten", pattern = "LVB-S(0[0-9]|10|19|20)-M
 tsv_files_dev1 <- list.files(path = "Daten", pattern = "LVB-S3[0-9]-M[0-9].tsv")
 
 
-# (0b)  
-# Unterscheidung der Akkorde
-# Für Unterscheidung nur nach Stufen: reduce <- 1
-# Für Normal: reduce <- 0
-
-reduce <- 0
 
 # (0c)
 # Zu untersuchendes Tongeschlecht festlegen
 # Für Dur: tongeschlecht <- 0, für Moll: tongeschlecht <- 1
-tongeschlecht <- 1
+tongeschlecht <- 0
 
 # (0d)
 # Festlegen des Umfangs einer Probe und der Anzahl Proben 
 proben_umfang <- 100 # Grösse (Umfang) d. Probe
 anz_proben <- 10000 # Anz. Proben
 
-
-start_time <- Sys.time()
 
 # (BASE)
   # (A)
@@ -469,10 +460,7 @@ start_time <- Sys.time()
       
       sample_df_dev1[i, "sample_mean"] <- mean(unlist(sample_entropy)) # Eintrag in Dataframe
     }
-    
-    # Schummel
-    expected_entropy_dev1 <- mean(sample_df_dev1$sample_mean_dev1)
-    
+        
     
 # (D)
 
@@ -486,10 +474,6 @@ start_time <- Sys.time()
     o_M_dev1 <- sum(sample_df_dev1$sample_mean > expected_entropy_base, na.rm = T)
     p_M_dev1 <- (2/anz_proben) * min(u_M_dev1, o_M_dev1)
     
-end_time <- Sys.time()
-laufzeit <- end_time - start_time
-print(laufzeit)
-
 # (D)
 
 # Farben Dur: #7A9DCF, #215CAF / Moll: #D48681, #B7352D
@@ -612,21 +596,4 @@ ggplot(data.frame(sample_mean_base = sample_df$sample_mean_base, sample_mean_dev
 
 
 # Speichere das Diagramm als PNG-Datei
-ggsave("ana3b-BG-compare-entropy_LVBS-early-late-minor-480dpi.png", plot = last_plot(), path = "Ergebnisse/In-Skript", width = 8, height = 5, dpi = 480)
-
-
-# # Bed. Vorhalt
-# if (!is.na(A_specific_harmonic_tab$changes[i]) && A_specific_harmonic_tab$changes[i] != "" && A_specific_harmonic_tab$changes[i] != 0 && !any(grepl("\\+", A_specific_harmonic_tab$changes[i]))) {}
-#   
-# # Bed. Inv ("figbass" ungleich 7)
-# if (!is.na(A_specific_harmonic_tab$figbass[i]) && A_specific_harmonic_tab$figbass[i] != "" && A_specific_harmonic_tab$figbass[i] != 0 && A_specific_harmonic_tab$figbass[i] != 7) {}
-#     
-# # Bed. Alt
-# if (substr(A_specific_harmonic_tab$chord[i],1,1) == "#" || substr(A_specific_harmonic_tab$chord[i],1,1) == "b") {}
-#   print(substr(A_specific_harmonic_tab$chord[i],1,1))
-#       
-# # Bed. OrgP
-# if (!is.na(A_specific_harmonic_tab$pedal[i]) && A_specific_harmonic_tab$pedal[i] != "" && A_specific_harmonic_tab$pedal[i] != 0) {}
-#         
-# # Bed. Tonik
-# if (!is.na(A_specific_harmonic_tab$relativeroot[i]) && A_specific_harmonic_tab$relativeroot[i] != "") {}
+ggsave("ana3b-BG-compare-entropy_LVBS-early-late-major-480dpi.png", plot = last_plot(), path = "Ergebnisse/In-Skript", width = 8, height = 5, dpi = 480)
