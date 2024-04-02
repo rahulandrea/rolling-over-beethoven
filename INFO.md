@@ -2,7 +2,7 @@
 Eine Vergleich statistischer Eigenschaften der tonalen Harmonie in Beethovens Klaviersonaten und Streichquartetten (Wettbewerbsarb. Schweizer Jugend forscht, 2024)
 
 > [!NOTE]
-> Für Infos zu den Skripten siehe README.pdf oder die jeweiligen Beschreibungen der Analysen.
+> Für Infos zu den Skripten siehe README.pdf oder die jeweiligen Beschreibungen der Analysen. (Es folgt noch ein README im Markdown-Format)
 
 ## Zusammenfassung
 
