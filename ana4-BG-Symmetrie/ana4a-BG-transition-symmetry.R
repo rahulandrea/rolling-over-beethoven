@@ -1,40 +1,9 @@
 # ana4-BG-Symmetrie: ana4a-BG-transition-symmetry.R
 # last review on 2024-03-29 by RAG
 
-# (0) Zuallererst wird der Untersuchungsgegenstand und Parameter festgelegt:
-#     (0a) Die zu untersuchenden Dateien
-#     (0b) Es besteht die Möglichkeit, nach Tongeschlecht der Tonartabschnitten zu filtern
-#     (0c) Hier können Umfang und Anzahl der Stichproben für den Hypothesentest festgelegt werden
+# siehe Beschreibung
 
-# BESCHREIBUNG ÜBERARBEITEN
-
-        # (A-B) Dieses Prog. nutzt "ana1a-UG-rank-freq.R" um ein Dataframes zu erstellen, welches jedem
-        #       Akkord (chord) einen Häufigkeitsrang (rank) und die relative Häufigkeit (relative_frequency) zuordnet
-        #     (A) "4a-combined-data.R" um eine grosse .tsv Tabelle über alle Stücke und Sätze zu erhalten
-        #     (B) Erstellt ein Rang-Häufigkeits-Dataframes
-        
-        # Weiter besteht dieses Prog. aus zwei Hauptteilen:
-        # (1) Nimmt Stichproben aus allen Akkorden und berechnet die norm. bed. Entropie für diese
-        #     (für einen Hinweis zur Laufzeit und Effizienz siehe den Bericht "ana3-Bericht.pdf")
-        #     (1a) Erstellt eine umfassende Matrix aller Akkordübergänge
-        #     (1b) Berechnet Entropie für alle Akkorde und Normierung dieser. Erstellt ein Dataframe, welches jedem 
-        #          Akkord (chord) seine bed. Entropie (entropy) und seine norm. bed. Entropie zuordnet (norm_entropy)
-        #     (1c) Wählt Stichproben von Akkorden (!! Umfang und Anzahl können unter (0d) festgelegt werden) und berechnet
-        #          den Mittelwert der Entropie der Stichprobenakkorde. Eintrag in Tabelle für jede Stichprobe.
-        # (2) Berechnet die mittlere norm. bed. Entropie aller Akkorde mit Akkordeigenschaft 
-        #     (!! Akkordeigenschaft kann unter (0b) festgelegt werden)
-        #     (2a) Erstellt eine Matrix aller Akkordübergänge, die von einem Akkord mit Akkordeigenschaft ausgehen
-        #     (2b) Berechnet Entropie für die Akkorde mit Akkordeigenschaft und Normierung dieser. Erstellt ein Dataframe,
-        #          welches jedem Akkord (chord) seine bed. Entr. (entropy) und norm. bed. Entr. zuordnet (norm_entropy)
-        #     (2c) Berechnet den Mittelwert
-        
-        # (C) Berechnet den p-Wert
-        # (D) Zuletzt ist es möglich ein Diagramm mit den mittl. norm. bed. Entr. der Stichproben und der mittl. 
-        #     norm. bed. Entr. der Akkorde mit Akkordeigenschaft ausgeben zu lassen. Die Intervalle, in welchen die
-        #     Stichproben für die Darstellung aufaddiert werden, können hier angepasst werden.
-
-
-setwd("/Users/rahul/Library/CloudStorage/OneDrive-SBL/32-Maturaarbeit")
+#setwd()
 
 
 # (0)
@@ -296,20 +265,7 @@ setwd("/Users/rahul/Library/CloudStorage/OneDrive-SBL/32-Maturaarbeit")
       color = farbe2,
       linetype = "solid",
       linewidth = 1) +
-      
-    # #  Mittelwert der Akkorde mit Eigenschaft
-    # geom_vline(
-    #   xintercept = entropy_mean_feat,
-    #   color = farbe2,
-    #   linetype = "solid",
-    #   linewidth = 2) +
-    # 
-    # # unkorr. Mittelwert
-    # geom_vline(
-    #   xintercept = entropy_mean_feat_raw,
-    #   color = mark1,
-    #   linetype = "solid",
-    #   linewidth = 2) +
+
     
     scale_x_continuous(limits = c(0, 1), breaks = seq(0, 1, by = 0.2)) +
       
