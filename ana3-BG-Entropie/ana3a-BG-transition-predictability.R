@@ -32,7 +32,7 @@
 #     Stichproben für die Darstellung aufaddiert werden, können hier angepasst werden.
 
 
-setwd("/Users/rahul/Library/CloudStorage/OneDrive-SBL/32-Maturaarbeit")
+setwd()
 
 
 # (0)
@@ -59,7 +59,7 @@ setwd("/Users/rahul/Library/CloudStorage/OneDrive-SBL/32-Maturaarbeit")
   # (0c)
     # Zu untersuchendes Tongeschlecht festlegen
     # Für Dur: tongeschlecht <- 0, für Moll: tongeschlecht <- 1
-    tongeschlecht <- 1
+    tongeschlecht <- 0
 
   # (0d)
     # Festlegen des Umfangs einer Probe und der Anzahl Proben 
@@ -385,11 +385,7 @@ setwd("/Users/rahul/Library/CloudStorage/OneDrive-SBL/32-Maturaarbeit")
     u_M <- sum(sample_df$sample_mean < entropy_mean_feat, na.rm = T)
     o_M <- sum(sample_df$sample_mean > entropy_mean_feat, na.rm = T)
     p_M <- (2/anz_proben) * min(u_M, o_M)
-    
 
-# end_time <- system.time()
-# laufzeit <- end_time - start_time
-# print(laufzeit)
 
 # (E)
     
@@ -479,7 +475,7 @@ setwd("/Users/rahul/Library/CloudStorage/OneDrive-SBL/32-Maturaarbeit")
 
     
     # Speichere das Diagramm als PNG-Datei
-    ggsave("ana3a-BG-transition-predictability_LVBQ-Vorh-minor-480dpi.png", plot = last_plot(), path = "Ergebnisse/In-Skript", width = 4, height = 7, dpi = 480)
+    ggsave("ana3a-BG-transition-predictability_LVBQ-Vorh-major-480dpi.png", plot = last_plot(), path = "Ergebnisse", width = 4, height = 7, dpi = 480)
 
 
 # # Bed. Vorhalt
