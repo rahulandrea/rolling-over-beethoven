@@ -1,13 +1,14 @@
 # ana1-UG-Rang-Häufigkeit: ana1a-UG-rank-freq.R
-# last review on 2024-01-25 by RAG
+# last review on 2024-03-24 by RAG
 
+# Zuallererst werden die zu untersuchenden Dateien festgelegt.
 # (A) Dieses Prog. nutzt "4a-combined-data.R" um eine grosse .tsv Tabelle über alle Stücke und Sätze zu erhalten
 # (B) Weiter besteht die Möglichkeit, nach Tongeschlecht der Tonartabschnitten zu filtern
 # (C) Anschliessend wird ein Dataframe erstellt, welches jedem Akkord (chord) einen Häufigkeitsrang (rank) 
 #     und die relative Häufigkeit (relative_frequency) zuordnet
 # (D) Es ist möglich sich ein Diagramm ausgeben zu lassen
 
-#setwd("/Users/rahul/Library/CloudStorage/OneDrive-SBL/32-Maturaarbeit")
+#setwd()
 
 # Liste der zu untersuchenden .tsv-Dateien erstellen
 # Dateien benamst nach [KOM]-[A][xx]-M[x].tsv 
@@ -18,7 +19,11 @@
 # Falls nur einzelne gewünscht: c("WAM-S01-M1.tsv", "LVB-S01-M1.tsv", "LVB-S01-M2.tsv")
 
 tsv_files <- list.files(path = "Daten", pattern = "[A-Z]{3}-S[0-9]{2}-M[0-9].tsv")
-#tsv_files <- c("Daten/LVB-S01-M1.tsv")
+
+# Zu untersuchendes Tongeschlecht festlegen (damit beim Auslesen von base und dev1 das selbe Tonggeschlecht 
+# rausgefiltert wird): Siehe dazu (BASE)/(B), (DEV1)/(B) bzw. (DEV2)/(B) 
+# Für Dur: tongeschlecht <- 0, für Moll: tongeschlecht <- 1
+tongeschlecht <- 0
 
 
 # (A): source("Vers-B/4-Datenbereinigung/4a-combined-data.R")
@@ -60,7 +65,7 @@ tsv_files <- list.files(path = "Daten", pattern = "[A-Z]{3}-S[0-9]{2}-M[0-9].tsv
 
 # (B) Filter nach Tongeschlecht der Tonartabschnitte: 
 #   Für Dur: "globalkey_is_minor" == 0, für Moll: "globalkey_is_minor" == 1
-    oval_harmonic_tab <- subset(final_combined_data, localkey_is_minor == 0)
+    oval_harmonic_tab <- subset(final_combined_data, localkey_is_minor == tongeschlecht)
 
 
 # (C) 
@@ -79,18 +84,45 @@ tsv_files <- list.files(path = "Daten", pattern = "[A-Z]{3}-S[0-9]{2}-M[0-9].tsv
     
     # Rang erstellen
     chord_freq_df$rank <- 1:nrow(chord_freq_df)
+    
+    # Zeilen löscehn, in denen die Spalte "chord" leer ist
+    chord_freq_df <- subset(chord_freq_df, !chord == "")
 
     
 # (D) Ausgabe Rang-Häufigkeits Diagramm
     # Farben Dur: #7A9DCF, #215CAF / Moll: #D48681, #B7352D
     # LVB-S: #007894, LVB-Q: #627313, WAM-S: #A7117A
-    
+    if (tongeschlecht == 0){
+      farbe1 <- "#215CAF"
+      farbe1_light <- "#7A9DCF"
+      farbe2 <- "#007894"
+      farbe2_light <- "#66AFC0"
+      farbe3 <- "#627313"
+      farbe3_light <- "#A1AB71"
+      mark1 <- "#B7352D"
+      mark1_light <- "#D48681"
+      mark2 <- "#A7117A"
+      mark2_light <- "#CA6CAE"
+      
+    } else if (tongeschlecht == 1){
+      farbe1 <- "#B7352D"
+      farbe1_light <- "#D48681"
+      farbe2 <- "#A7117A"
+      farbe2_light <- "#CA6CAE"
+      farbe3 <- "#8E6713"
+      farbe3_light <- "#BBA471"
+      mark1 <- "#215CAF"
+      mark1_light <<- "#7A9DCF"
+      mark2 <- "#007894"
+      mark2_light <- "#66AFC0"
+    }
+
     # Plot
     library(ggplot2)
     ggplot(chord_freq_df, aes(x = rank, y = relative_frequency)) +
       # Erstelle ein gestapeltes Punktdiagramm (Dot Plot)
       geom_point(data = chord_freq_df, aes(x = rank, y = relative_frequency),
-                 shape = 1, size = 2.5, color = "#7A9DCF") +
+                 shape = 1, size = 2.5, color = farbe1_light) +
       
       # Allg. Einstellungen
       scale_y_continuous(trans = "log10", limits =c(0.00005, 0.18)) +
