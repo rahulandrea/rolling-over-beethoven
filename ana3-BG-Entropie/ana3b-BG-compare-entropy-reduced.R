@@ -34,7 +34,7 @@
 #     norm. bed. Entr. der Akkorde mit Akkordeigenschaft ausgeben zu lassen. Die Intervalle, in welchen die
 #     Stichproben für die Darstellung aufaddiert werden, können hier angepasst werden.
 
-setwd()
+#setwd()
 
 
 # (0)
@@ -62,8 +62,6 @@ tongeschlecht <- 0
 proben_umfang <- 100 # Grösse (Umfang) d. Probe
 anz_proben <- 10000 # Anz. Proben
 
-
-#start_time <- Sys.time()
 
 # (BASE)
   # (A)
