@@ -17,7 +17,7 @@
 # (Y)  Weiter ist es möglich die erhaltenen Werte im Dataframe mit der Mandelbrot-Zipf-Kurve zu vergleichen
 # (D) Es ist möglich sich ein Diagramm ausgeben zu lassen
 
-setwd("/Users/rahul/Library/CloudStorage/OneDrive-SBL/32-Maturaarbeit")
+#setwd()
 
 
 # Liste der zu untersuchenden .tsv-Dateien erstellen
@@ -30,7 +30,7 @@ setwd("/Users/rahul/Library/CloudStorage/OneDrive-SBL/32-Maturaarbeit")
 
 #tsv_files <- list.files(path = "Daten", pattern = "[A-Z]{3}-S[0-9]{2}-M[0-9].tsv")
 tsv_files_base <- list.files(path = "Daten", pattern = "LVB-S[0-9]{2}-M[0-9].tsv")
-tsv_files_dev1 <- list.files(path = "Daten", pattern = "WAM-S[0-9]{2}-M[0-9].tsv")
+tsv_files_dev1 <- list.files(path = "Daten", pattern = "LVB-Q[0-9]{2}-M[0-9].tsv")
 
 all_files <- c(tsv_files_base, tsv_files_dev1)
 
@@ -294,4 +294,4 @@ tongeschlecht <- 0
             )
 
     # Speichere das Diagramm als PNG-Datei
-    #ggsave("ana1c-UG-rank-freq_Vgl-LVBS-WAMS-major-480dpi.png", plot = last_plot(), path = "Ergebnisse", width = 8, height = 5, dpi = 480)
+    ggsave("ana1c-UG-rank-freq_Vgl-LVBS-LVBQ-major-480dpi.png", plot = last_plot(), path = "Ergebnisse", width = 8, height = 5, dpi = 480)
