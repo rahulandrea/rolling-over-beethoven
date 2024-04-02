@@ -14,7 +14,7 @@
 #     und wandelt die Matrix in ein Dataframe um
 # (F) Weiter ist es möglich sich eine Heatmap der Übergänge zwischen dern 25 häufigsten Akkorden ausgeben zu lassen.
 
-setwd("/Users/rahul/Library/CloudStorage/OneDrive-SBL/32-Maturaarbeit")
+#setwd()
 
 
 # Liste der zu untersuchenden .tsv-Dateien erstellen
@@ -202,4 +202,4 @@ tongeschlecht <- 1
     
     
     # Speichere das Diagramm als PNG-Datei # EMPFOHLEN: geom_text(.. , size = 2)
-    ggsave("ana2a-BG-heatmap_LVBQ-minor-480dpi.png", plot = last_plot(), path = "Ergebnisse/In-Skript", width = 8, height = 8, dpi = 480)
+    ggsave("ana2a-BG-heatmap_LVBQ-minor-480dpi.png", plot = last_plot(), path = "Ergebnisse", width = 8, height = 8, dpi = 480)
